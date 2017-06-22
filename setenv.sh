@@ -27,7 +27,7 @@ setup()
 # Usage: source ./setenv.sh
 #
 export SCRIPT_PATH=$(cd $(dirname $BASH_SOURCE); pwd)
-export PATH=$SCRIPT_PATH/wechat-dump:$PATH
+export PATH=$SCRIPT_PATH:$PATH
 
 if [ ! -d "$SCRIPT_PATH/venv" ]; then
     setup
